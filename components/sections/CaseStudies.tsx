@@ -151,12 +151,24 @@ export function CaseStudies() {
                 >
                   {study.headline}
                 </h3>
-                <p
-                  className="text-body-md mb-8 leading-relaxed"
-                  style={{ color: "var(--color-outline-variant)" }}
-                >
-                  {study.description}
-                </p>
+                <div className="mb-8 space-y-5">
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[10px] uppercase tracking-widest font-mono" style={{ color: "var(--color-primary-fixed-dim)" }}>01 / Problem</span>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>{study.problem}</p>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[10px] uppercase tracking-widest font-mono" style={{ color: "var(--color-primary-fixed-dim)" }}>02 / Diagnosis</span>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>{study.diagnosis}</p>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[10px] uppercase tracking-widest font-mono" style={{ color: "var(--color-primary-fixed-dim)" }}>03 / Architecture</span>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>{study.architecture}</p>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[10px] uppercase tracking-widest font-mono" style={{ color: "var(--color-primary-fixed-dim)" }}>04 / Implementation</span>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>{study.implementation}</p>
+                  </div>
+                </div>
 
                 {/* Outcome callout */}
                 <div

@@ -87,10 +87,10 @@ export function WhyNorthStar() {
                     <p className="text-label-caps mt-1" style={{ color: "var(--color-secondary)" }}>Specialization: GCC Revenue Systems</p>
                   </div>
                   <h3 className="text-headline-sm mb-6" style={{ color: "var(--color-primary)", lineHeight: 1.3 }}>
-                    I build the architecture that consulting firms only talk about.
+                    We build the architecture that consulting firms only talk about.
                   </h3>
                   <p className="text-body-md mb-8" style={{ color: "var(--color-secondary)" }}>
-                    I built clinical data infrastructures and real estate lead-routing systems because I watched millions of dollars burn on theoretical strategy decks. You do not need more advice. You need systems that mathematically generate yield.
+                    The firm engineers clinical data infrastructures and real estate lead-routing systems because we have witnessed millions of dollars burn on theoretical strategy decks. You do not need more advice. You need systems that mathematically generate yield.
                   </p>
                 </div>
               </div>

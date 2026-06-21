@@ -96,8 +96,10 @@ export const caseStudies: CaseStudy[] = [
   {
     tags: ["Real Estate", "Conversion Architecture"],
     headline: "Institutional Real Estate Portfolio",
-    description:
-      "Engineered a multi-node lead routing architecture to process high-volume inquiries, applying strict logic rules to segment intent and automate premium follow-up sequencing.",
+    problem: "High-volume ad spend generating unpredictable lead quality across 12 decentralized developments.",
+    diagnosis: "No central intent verification; sales teams were burning bandwidth on low-intent inquiries, eroding margin.",
+    architecture: "Algorithmic routing logic layer mapping behavioral intent to dynamic lead scoring thresholds.",
+    implementation: "Deployed a centralized webhook router intercepting, scoring, and instantly distributing high-intent leads to premium agents.",
     constraint: "Lead Leakage at Scale",
     outcomeStat: "31%",
     outcomeLabel: "Increase in Qualified Conversion",
@@ -105,8 +107,10 @@ export const caseStudies: CaseStudy[] = [
   {
     tags: ["Healthcare", "Growth Architecture"],
     headline: "Premium Private Clinic Network",
-    description:
-      "Architected a centralised data ecosystem integrating disjointed clinical and marketing systems to calculate precise patient lifetime value and algorithmically optimise acquisition spend.",
+    problem: "Rising patient acquisition costs despite increasing top-of-funnel marketing budgets.",
+    diagnosis: "Fragmented data silos prevented the clinic from attributing exact Patient Lifetime Value (LTV) to specific marketing channels.",
+    architecture: "Unified data pipeline connecting appointment booking systems directly to advertising conversion APIs.",
+    implementation: "Deployed server-side conversion tracking and structural data mapping to feed deterministic LTV data back into algorithmic ad bidding.",
     constraint: "Fragmented Data Silos",
     outcomeStat: "42%",
     outcomeLabel: "Reduction in Patient Acquisition Cost",

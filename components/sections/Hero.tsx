@@ -54,7 +54,7 @@ export function Hero() {
                   className="text-body-lg mb-12 max-w-2xl"
                   style={{ color: "var(--color-on-surface-variant)" }}
                 >
-                  Revenue is leaking. Bandwidth is burned. Margins are eroding. We diagnose systemic bottlenecks and architect revenue yield and operational leverage for ambitious operators in the GCC.
+                  We identify structural revenue leakage and deploy algorithmic execution to protect enterprise margins. We architect systemic revenue yield for ambitious operators across the GCC.
                 </p>
               </div>
 

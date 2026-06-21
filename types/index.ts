@@ -20,7 +20,10 @@ export interface MethodologyStep {
 export interface CaseStudy {
   tags: string[];
   headline: string;
-  description: string;
+  problem: string;
+  diagnosis: string;
+  architecture: string;
+  implementation: string;
   constraint: string;
   outcomeStat: string;
   outcomeLabel: string;

@@ -107,11 +107,56 @@ function InteractiveDiagnostic() {
           <div>
             <p className="text-label-caps mb-4" style={{ color: "var(--color-primary-fixed-dim)" }}>Diagnostic Complete</p>
             <h3 className="text-headline-md mb-6">Your Growth Friction Index</h3>
-            <p className="text-body-lg mb-8" style={{ color: "var(--color-outline-variant)" }}>
-              {isSevere && "Severe Operational Drag. More than half of your throughput is being lost to structural bottlenecks. Scaling acquisition right now will accelerate margin erosion."}
-              {isWarning && "Moderate Friction Detected. Your systems are functioning, but revenue is leaking at the seams. Yield protection is required before further scaling."}
-              {!isSevere && !isWarning && "Highly Optimized Architecture. Your systems are primed for frictionless scale. The focus should remain on marginal yield improvements."}
-            </p>
+            <div className="mb-8 space-y-6">
+              {isSevere && (
+                <>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>01 / Mathematical Reality</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>Severe Operational Drag. Over 50% of your throughput is actively suppressed by structural bottlenecks.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>02 / Business Implications</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>Scaling acquisition spend in this state will mathematically accelerate margin erosion. Capital is converting to friction, not yield.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>03 / Recommended Action</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>A complete architectural audit is required to identify and patch the core leaks before deploying further growth capital.</p>
+                  </div>
+                </>
+              )}
+              {isWarning && (
+                <>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>01 / Mathematical Reality</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>Moderate Friction Detected. Your systems are functioning, but measurable revenue is leaking at the seams.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>02 / Business Implications</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>You are working harder than necessary for your current revenue. Your system is inefficient, requiring excessive manual bandwidth to sustain.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>03 / Recommended Action</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>Yield protection is required. We must isolate the specific friction points and deploy algorithmic execution before further scaling.</p>
+                  </div>
+                </>
+              )}
+              {!isSevere && !isWarning && (
+                <>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>01 / Mathematical Reality</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>Highly Optimized Architecture. Your core operational systems are primed for frictionless scale.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>02 / Business Implications</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>Capital deployed into this system will yield compounding returns. Your infrastructure is not currently the bottleneck to your growth.</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-label-caps" style={{ color: "var(--color-primary-fixed-dim)" }}>03 / Recommended Action</p>
+                    <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>The focus should remain on marginal yield improvements and advanced routing experiments to squeeze the final 5% of efficiency.</p>
+                  </div>
+                </>
+              )}
+            </div>
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-8">
               <a 
                 href={`https://wa.me/213549391101?text=${encodeURIComponent(
