@@ -127,7 +127,7 @@ IP:        ${ip}
 
       await resend.emails.send({
         from: "North Star Advisory <noreply@northstaradvisory.pro>",
-        to: ["hello@northstaradvisory.pro"],
+        to: ["hamza@northstaradvisory.pro"],
         replyTo: email,
         subject: `Strategic Review Request — ${name}${company ? ` (${company})` : ""}`,
         text: emailContent,
