@@ -512,7 +512,7 @@ export function LeadCapture() {
                 </a>
                 <span className="hidden sm:block" style={{ color: "var(--color-outline-variant)" }}>|</span>
                 <a 
-                  href={`https://wa.me/971500000000?text=${encodeURIComponent(
+                  href={`https://wa.me/213549391101?text=${encodeURIComponent(
                     gfiScore !== null && gfiSeverity !== null
                       ? `Hi Hamza, I just ran the GFI and scored ${gfiScore}x EBITDA Yield (${gfiSeverity}). I want to discuss a systemic audit.`
                       : "Hi Hamza, I want to discuss a systemic audit."
