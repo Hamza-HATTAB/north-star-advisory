@@ -1,0 +1,64 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - Next.js (App Router)
+  - React
+  - Tailwind CSS
+  - Framer Motion
+  - Cloudflare Turnstile
+routes:
+  - path: /
+    file: app/page.tsx
+    auth_required: false
+    description: Landing page for North Star Advisory featuring GFI diagnostic and contact forms.
+  - path: /api/contact
+    file: app/api/contact/route.ts
+    auth_required: false
+    description: API route to process lead submissions and Turnstile bot protection.
+features:
+  - name: Growth Friction Index (GFI) Diagnostic
+    description: 3-step calculator determining operational revenue leakage and EBITDA yield multiplier
+    files:
+      - components/sections/GrowthFrictionIndex.tsx
+    entry_route: /
+    user_interactions:
+      - Select measurement input option
+      - Select visibility input option
+      - Select velocity input option
+      - View resulting EBITDA Yield and severity score
+      - Click 'Discuss on WhatsApp' to share results
+      - Click 'Recalculate' to reset the form
+    api_calls: []
+    auth_required: false
+  - name: Secure Enterprise Lead Capture
+    description: Contact form protected by Cloudflare Turnstile
+    files:
+      - components/sections/LeadCapture.tsx
+      - app/api/contact/route.ts
+    entry_route: /
+    user_interactions:
+      - Fill Full Name input field
+      - Fill Corporate Email input field
+      - Fill Company Name input field
+      - Complete Cloudflare Turnstile CAPTCHA
+      - Click 'Request Strategic Review' button to submit
+      - See validation error on empty/invalid inputs
+      - See success message 'Request Received' on successful submission
+    api_calls:
+      - method: POST
+        endpoint: /api/contact
+    auth_required: false
+  - name: Global Navigation
+    description: Sticky header navigation and mobile menu
+    files:
+      - components/navigation/Navbar.tsx
+    entry_route: /
+    user_interactions:
+      - Click logo to scroll to top
+      - Click navigation links to scroll to sections
+      - Click hamburger menu on mobile to open drawer
+      - Click primary CTA button to scroll to contact form
+    api_calls: []
+    auth_required: false
+known_limitations: []

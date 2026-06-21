@@ -13,7 +13,9 @@ test.describe("Contact Form", () => {
     await expect(page.locator("#contact-name")).toBeVisible();
     await expect(page.locator("#contact-email")).toBeVisible();
     await expect(page.locator("#contact-company")).toBeVisible();
-    await expect(page.locator("#contact-objective")).toBeVisible();
+    await expect(page.locator("#contact-industry")).toBeVisible();
+    await expect(page.locator("#contact-companySize")).toBeVisible();
+    await expect(page.locator("#contact-bottleneck")).toBeVisible();
     await expect(page.locator("#contact-submit")).toBeVisible();
   });
 
@@ -33,7 +35,7 @@ test.describe("Contact Form", () => {
 
   test("submit button has correct label text", async ({ page }) => {
     const btn = page.locator("#contact-submit");
-    await expect(btn).toContainText(/request strategic review/i);
+    await expect(btn).toContainText(/apply for diagnostic/i);
   });
 
   test("form fields have correct accessibility attributes", async ({ page }) => {

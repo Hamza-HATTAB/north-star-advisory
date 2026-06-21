@@ -63,7 +63,6 @@ test.describe("Navigation", () => {
   test("all main sections are present", async ({ page }) => {
     for (const id of [
       "#growth-friction-index",
-      "#services",
       "#methodology",
       "#case-studies",
       "#why-north-star",

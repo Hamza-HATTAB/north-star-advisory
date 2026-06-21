@@ -48,6 +48,7 @@ export function Navbar() {
   return (
     <>
       <header
+        role="banner"
         className="w-full sticky top-0 z-50 transition-all duration-300"
         style={{
           height: "96px",

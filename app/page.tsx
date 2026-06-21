@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main id="main-content" tabIndex={-1} className="w-full overflow-x-hidden relative">
+      <main id="main-content" role="main" tabIndex={-1} className="w-full overflow-x-hidden relative">
         <div className="relative z-10">
           <Hero />
           <GrowthFrictionIndex />

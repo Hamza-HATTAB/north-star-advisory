@@ -11,6 +11,7 @@ export function Footer() {
 
   return (
     <footer
+      role="contentinfo"
       className="py-12"
       style={{
         backgroundColor: "var(--color-primary)",

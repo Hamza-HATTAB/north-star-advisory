@@ -73,15 +73,19 @@ export async function POST(req: NextRequest) {
       gfiScore, gfiSeverity, gfiAnswers 
     } = result.data;
 
-    // Verify Turnstile if token provided
-    if (turnstileToken) {
-      const valid = await verifyTurnstile(turnstileToken);
-      if (!valid) {
-        return NextResponse.json(
-          { success: false, error: "Security verification failed. Please refresh and try again." },
-          { status: 400 }
-        );
-      }
+    // Verify Turnstile unconditionally
+    if (!turnstileToken) {
+      return NextResponse.json(
+        { success: false, error: "Bot protection challenge missing. Please refresh and try again." },
+        { status: 400 }
+      );
+    }
+    const valid = await verifyTurnstile(turnstileToken);
+    if (!valid) {
+      return NextResponse.json(
+        { success: false, error: "Security verification failed. Please refresh and try again." },
+        { status: 400 }
+      );
     }
 
     // Send email via Resend
