@@ -82,8 +82,8 @@ export function WhyNorthStar() {
                 <div>
                   <SectionLabel>The Operator</SectionLabel>
                   <div className="mb-8 pb-8" style={{ borderBottom: "1px dashed rgba(0,23,54,0.15)" }}>
-                    <p className="text-headline-sm" style={{ color: "var(--color-primary)" }}>Hamza Hattab</p>
-                    <p className="text-label-caps mt-3" style={{ color: "var(--color-secondary)" }}>AI Engineering, USTHB</p>
+                    <p className="text-headline-sm" style={{ color: "var(--color-primary)" }}>Principal Advisor</p>
+                    <p className="text-label-caps mt-3" style={{ color: "var(--color-secondary)" }}>Revenue Systems & Growth Architecture</p>
                     <p className="text-label-caps mt-1" style={{ color: "var(--color-secondary)" }}>Specialization: GCC Revenue Systems</p>
                   </div>
                   <h3 className="text-headline-sm mb-6" style={{ color: "var(--color-primary)", lineHeight: 1.3 }}>

@@ -115,7 +115,7 @@ function InteractiveDiagnostic() {
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-8">
               <a 
                 href={`https://wa.me/213549391101?text=${encodeURIComponent(
-                  `Hi Hamza, I just ran the GFI and scored ${finalScore}x EBITDA Yield (${isSevere ? "SEVERE LEAKAGE" : isWarning ? "MODERATE FRICTION" : "OPTIMIZED"}). I want to discuss a systemic audit.`
+                  "Hello, I completed the Growth Friction Diagnostic and would like to discuss the results."
                 )}`} 
                 target="_blank" 
                 rel="noopener noreferrer" 

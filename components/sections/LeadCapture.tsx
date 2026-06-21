@@ -507,15 +507,15 @@ export function LeadCapture() {
                 Or contact us directly
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="mailto:hamza@northstaradvisory.pro" className="text-body-md font-semibold hover:underline" style={{ color: "var(--color-primary)" }}>
-                  hamza@northstaradvisory.pro
+                <a href="mailto:strategy@northstaradvisory.pro" className="text-body-md font-semibold hover:underline" style={{ color: "var(--color-primary)" }}>
+                  strategy@northstaradvisory.pro
                 </a>
                 <span className="hidden sm:block" style={{ color: "var(--color-outline-variant)" }}>|</span>
                 <a 
                   href={`https://wa.me/213549391101?text=${encodeURIComponent(
                     gfiScore !== null && gfiSeverity !== null
-                      ? `Hi Hamza, I just ran the GFI and scored ${gfiScore}x EBITDA Yield (${gfiSeverity}). I want to discuss a systemic audit.`
-                      : "Hi Hamza, I want to discuss a systemic audit."
+                      ? "Hello, I completed the Growth Friction Diagnostic and would like to discuss the results."
+                      : "Hello, I would like to discuss a systemic audit."
                   )}`} 
                   target="_blank" 
                   rel="noopener noreferrer" 
