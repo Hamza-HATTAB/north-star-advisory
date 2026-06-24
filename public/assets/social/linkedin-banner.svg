@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+    <rect width="1584" height="396" fill="#001736" />
+    <rect x="0" y="0" width="1584" height="120" fill="#050a12" />
+    <line x1="0" y1="120" x2="1584" y2="120" stroke="#7594ca" stroke-opacity="0.2" stroke-width="2" />
+    
+    <text x="1350" y="50" font-family="'Inter', sans-serif" font-size="14" fill="#7594ca" letter-spacing="0.2em" text-anchor="end">CLASSIFICATION</text>
+    <text x="1350" y="80" font-family="'Inter', sans-serif" font-size="20" fill="#b18e49" font-weight="600" letter-spacing="0.1em" text-anchor="end">STRICTLY CONFIDENTIAL</text>
+    
+    <text x="1350" y="230" font-family="'Inter', sans-serif" font-size="14" fill="#7594ca" letter-spacing="0.2em" text-anchor="end">DOCUMENT SUBJECT</text>
+    <text x="1350" y="290" font-family="'Playfair Display', serif" font-size="48" fill="#fbf9f4" letter-spacing="0.05em" text-anchor="end">Revenue Architecture Briefing</text>
+    
+    <g transform="translate(1450, 30) scale(0.6)">
+        <polygon points="20,90 80,90 60,50 40,50" fill="#fbf9f4" />
+        <polygon points="50,10 60,30 40,30" fill="#b18e49" />
+    </g>
+</svg>

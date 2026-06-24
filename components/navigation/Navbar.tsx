@@ -64,11 +64,16 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-headline-sm"
-            style={{ color: "var(--color-primary)", textDecoration: "none" }}
+            className="flex items-center"
             aria-label="North Star Advisory — Home"
           >
-            North Star Advisory
+            <img 
+              src="/assets/brand/logo-wordmark.svg" 
+              alt="North Star Advisory" 
+              width={220} 
+              height={38} 
+              style={{ display: "block" }} 
+            />
           </Link>
 
           {/* Desktop Navigation */}

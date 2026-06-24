@@ -21,11 +21,14 @@ export function Footer() {
       <div className="container-main">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo */}
-          <div
-            className="text-headline-sm"
-            style={{ color: "var(--color-on-primary)" }}
-          >
-            North Star Advisory
+          <div className="flex items-center">
+            <img 
+              src="/assets/brand/logo-symbol-light.svg" 
+              alt="North Star Advisory" 
+              width={40} 
+              height={40} 
+              style={{ display: "block" }}
+            />
           </div>
 
           {/* Links */}

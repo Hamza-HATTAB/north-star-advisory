@@ -20,6 +20,9 @@ export const baseMetadata: Metadata = {
   authors: [{ name: "North Star Advisory" }],
   creator: "North Star Advisory",
   publisher: "North Star Advisory",
+  icons: {
+    icon: "/assets/brand/icon.svg",
+  },
   alternates: {
     canonical: baseUrl,
   },
@@ -33,10 +36,10 @@ export const baseMetadata: Metadata = {
     siteName: "North Star Advisory",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/assets/social/og-image.png",
         width: 1200,
         height: 630,
-        alt: "North Star Advisory — Growth Systems for GCC Businesses",
+        alt: "North Star Advisory — Revenue Architecture Briefing",
       },
     ],
   },
@@ -45,7 +48,7 @@ export const baseMetadata: Metadata = {
     title: "North Star Advisory | Growth Systems for GCC Businesses",
     description:
       "Strategic Growth, Conversion & Automation Advisory for GCC businesses.",
-    images: ["/og-image.jpg"],
+    images: ["/assets/social/og-image.png"],
   },
   robots: {
     index: true,

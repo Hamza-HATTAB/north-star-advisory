@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" width="2480" height="3508">
+    <rect width="2480" height="3508" fill="#001736" />
+    <line x1="600" y1="0" x2="600" y2="3508" stroke="#7594ca" stroke-opacity="0.2" stroke-width="2" />
+    
+    <g transform="translate(300, 400) scale(1.5)">
+        <polygon points="20,90 80,90 60,50 40,50" fill="#fbf9f4" />
+        <polygon points="50,10 60,30 40,30" fill="#b18e49" />
+    </g>
+    
+    <text x="700" y="500" font-family="'Inter', sans-serif" font-size="28" fill="#fbf9f4" letter-spacing="0.2em">NORTH STAR ADVISORY</text>
+    <text x="700" y="550" font-family="'Inter', sans-serif" font-size="20" fill="#7594ca" letter-spacing="0.2em">STRATEGIC PLANNING &amp; INFRASTRUCTURE</text>
+    
+    <text x="300" y="1400" font-family="'Inter', sans-serif" font-size="24" fill="#7594ca" letter-spacing="0.2em">1.0</text>
+    <text x="700" y="1400" font-family="'Inter', sans-serif" font-size="24" fill="#7594ca" letter-spacing="0.2em">CLASSIFICATION</text>
+    <text x="700" y="1460" font-family="'Inter', sans-serif" font-size="40" fill="#fbf9f4" letter-spacing="0.1em">STRICTLY CONFIDENTIAL</text>
+    
+    <text x="300" y="1700" font-family="'Inter', sans-serif" font-size="24" fill="#7594ca" letter-spacing="0.2em">2.0</text>
+    <text x="700" y="1700" font-family="'Inter', sans-serif" font-size="24" fill="#7594ca" letter-spacing="0.2em">SUBJECT</text>
+    <text x="700" y="1780" font-family="'Playfair Display', serif" font-size="88" fill="#fbf9f4" letter-spacing="0.02em">Revenue Systems</text>
+    <text x="700" y="1900" font-family="'Playfair Display', serif" font-size="88" fill="#fbf9f4" letter-spacing="0.02em">Architecture Review</text>
+    
+    <text x="300" y="3200" font-family="'Inter', sans-serif" font-size="20" fill="#7594ca" letter-spacing="0.2em">REF</text>
+    <text x="700" y="3200" font-family="'Inter', sans-serif" font-size="20" fill="#fbf9f4" letter-spacing="0.2em">NSA-ICD-004 / 2026</text>
+</svg>

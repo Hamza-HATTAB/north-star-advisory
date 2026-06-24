@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 60" width="340" height="60">
+    <g transform="translate(0, 5) scale(0.5)">
+        <polygon points="20,90 80,90 60,50 40,50" fill="#001736" />
+        <polygon points="50,10 60,30 40,30" fill="#b18e49" />
+    </g>
+    <text x="65" y="32" font-family="'Playfair Display', Georgia, serif" font-size="18" font-weight="600" fill="#001736" letter-spacing="0.05em">NORTH STAR ADVISORY</text>
+    <text x="65" y="48" font-family="'Inter', sans-serif" font-size="8" font-weight="600" fill="#636262" letter-spacing="0.1em">GROWTH SYSTEMS &amp; INFRASTRUCTURE</text>
+</svg>
