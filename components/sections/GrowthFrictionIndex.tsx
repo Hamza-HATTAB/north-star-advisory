@@ -159,7 +159,7 @@ function InteractiveDiagnostic() {
             </div>
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-8">
               <a 
-                href={`https://wa.me/213549391101?text=${encodeURIComponent(
+                href={`https://wa.me/213776463005?text=${encodeURIComponent(
                   "Hello, I completed the Growth Friction Diagnostic and would like to discuss the results."
                 )}`} 
                 target="_blank" 
