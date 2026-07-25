@@ -29,224 +29,248 @@ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
     - generic [ref=e4]:
       - link "North Star Advisory — Home" [ref=e5] [cursor=pointer]:
         - /url: /
-        - text: North Star Advisory
-      - button "Open navigation menu" [ref=e6]:
-        - img [ref=e7]
-  - main [ref=e8]:
-    - generic [ref=e9]:
-      - region "Hero — North Star Advisory positioning" [ref=e10]:
-        - generic [ref=e11]:
-          - generic [ref=e14]:
-            - generic [ref=e15]:
-              - generic [ref=e17]: North Star Advisory
-              - generic [ref=e18]: /
-              - generic [ref=e19]: Revenue Architecture
-            - heading "Growth rarely breaks because of effort. It breaks because of friction hidden inside the system." [level=1] [ref=e21]
-            - paragraph [ref=e23]: Revenue is leaking. Bandwidth is burned. Margins are eroding. We diagnose systemic bottlenecks and architect revenue yield and operational leverage for ambitious operators in the GCC.
-            - generic [ref=e25]:
-              - button "Apply for Diagnostic" [ref=e26] [cursor=pointer]
-              - button "Read The Thesis" [ref=e27] [cursor=pointer]:
+        - img "North Star Advisory" [ref=e6]
+      - button "Open navigation menu" [ref=e7]:
+        - img [ref=e8]
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - region "Hero — North Star Advisory positioning" [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e15]:
+            - generic [ref=e16]:
+              - generic [ref=e18]: North Star Advisory
+              - generic [ref=e19]: /
+              - generic [ref=e20]: Revenue Architecture
+            - heading "Growth rarely breaks because of effort. It breaks because of friction hidden inside the system." [level=1] [ref=e22]
+            - paragraph [ref=e24]: We identify structural revenue leakage and deploy algorithmic execution to protect enterprise margins. We architect systemic revenue yield for ambitious operators across the GCC.
+            - generic [ref=e26]:
+              - button "Apply for Diagnostic" [ref=e27] [cursor=pointer]
+              - button "Read The Thesis" [ref=e28] [cursor=pointer]:
                 - text: Read The Thesis
-                - img [ref=e28]
-          - generic [ref=e31]:
-            - generic [ref=e32]:
-              - paragraph [ref=e33]: Built For
-              - paragraph [ref=e34]: Real Estate, Healthcare, Professional Services
-            - generic [ref=e35]:
-              - paragraph [ref=e36]: Focus
-              - paragraph [ref=e37]: Saudi Arabia, UAE
-            - generic [ref=e38]:
-              - paragraph [ref=e39]: Specialization
-              - paragraph [ref=e40]: Revenue Systems, AI Infrastructure, Conversion Architecture
-      - region "The Growth Friction Index" [ref=e41]:
-        - generic [ref=e42]:
-          - generic [ref=e43]:
-            - generic [ref=e44]:
-              - paragraph [ref=e45]: Proprietary Diagnostic
-              - heading "The Growth Friction Index" [level=2] [ref=e46]
-            - paragraph [ref=e48]: Most businesses do not have a growth problem. They have a friction problem. We identify exactly where revenue is being suppressed across three diagnostic domains — and we remove the constraints with precision.
-          - generic [ref=e50]:
-            - generic [ref=e51]:
-              - generic [ref=e52]:
+                - img [ref=e29]
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - paragraph [ref=e34]: Built For
+              - paragraph [ref=e35]: Real Estate, Healthcare, Professional Services
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Focus
+              - paragraph [ref=e38]: Saudi Arabia, UAE
+            - generic [ref=e39]:
+              - paragraph [ref=e40]: Specialization
+              - paragraph [ref=e41]: Revenue Systems, AI Infrastructure, Conversion Architecture
+      - region "The Growth Friction Index" [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: Proprietary Diagnostic
+              - heading "The Growth Friction Index" [level=2] [ref=e47]
+            - paragraph [ref=e49]: Most businesses do not have a growth problem. They have a friction problem. We identify exactly where revenue is being suppressed across three diagnostic domains — and we remove the constraints with precision.
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e53]:
                 - text: Operational Inputs
-                - paragraph [ref=e53]: Capital & Time
-              - generic [ref=e54]: ÷
-              - generic [ref=e55]:
-                - generic [ref=e56]: The Diagnostic
-                - paragraph [ref=e57]: Friction Drag
-              - generic [ref=e58]: =
-              - generic [ref=e59]:
+                - paragraph [ref=e54]: Capital & Time
+              - generic [ref=e55]: ÷
+              - generic [ref=e56]:
+                - generic [ref=e57]: The Diagnostic
+                - paragraph [ref=e58]: Friction Drag
+              - generic [ref=e59]: =
+              - generic [ref=e60]:
                 - text: Actual Outcome
-                - paragraph [ref=e60]: EBITDA Yield
-            - generic [ref=e61]:
-              - paragraph [ref=e62]: The Operator's Equation
-              - paragraph [ref=e63]: Growth isn't just about adding more capital or time. It's about removing the friction that suppresses your return on both. We isolate the exact locations where revenue is leaking.
-          - generic [ref=e65]:
-            - generic [ref=e66]:
-              - generic [ref=e67]: Live Diagnostic
-              - generic [ref=e68]: 01 / 03
-            - heading "How is your acquisition data routed to your sales or conversion team?" [level=3] [ref=e69]
-            - generic [ref=e70]:
-              - button "A Manual CRM entry or disjointed CSV uploads." [ref=e71]:
-                - generic [ref=e72]: A
-                - generic [ref=e73]: Manual CRM entry or disjointed CSV uploads.
-              - button "B Basic Zapier connections without intent filtering." [ref=e74]:
-                - generic [ref=e75]: B
-                - generic [ref=e76]: Basic Zapier connections without intent filtering.
-              - button "C Real-time algorithmic routing based on behavioral intent." [ref=e77]:
-                - generic [ref=e78]: C
-                - generic [ref=e79]: Real-time algorithmic routing based on behavioral intent.
-      - region "The Architecture Model" [ref=e80]:
-        - generic [ref=e81]:
-          - generic [ref=e82]:
-            - paragraph [ref=e83]: Deployment Protocol
-            - heading "The Architecture Model" [level=2] [ref=e84]
-          - generic [ref=e86]:
-            - generic [ref=e88]:
-              - generic [ref=e89]: "01"
-              - heading "Structural Audit" [level=3] [ref=e90]
-              - paragraph [ref=e91]: Mapping your current data flow and isolating the exact operational bottlenecks suppressing your enterprise margin.
-            - generic [ref=e93]:
-              - generic [ref=e94]: "02"
-              - heading "Logic Architecture" [level=3] [ref=e95]
-              - paragraph [ref=e96]: Engineering a bespoke conversion pipeline and strict routing rules to maximize your system throughput.
-            - generic [ref=e98]:
-              - generic [ref=e99]: "03"
-              - heading "Live Deployment" [level=3] [ref=e100]
-              - paragraph [ref=e101]: Integrating the new infrastructure into your live environment without disrupting daily execution.
-            - generic [ref=e103]:
-              - generic [ref=e104]: "04"
-              - heading "Yield Optimization" [level=3] [ref=e105]
-              - paragraph [ref=e106]: Continuous algorithmic refinement based on hard performance data and measured operational leverage.
-      - region "Architectural Interventions" [ref=e107]:
-        - generic [ref=e108]:
-          - generic [ref=e110]:
-            - generic [ref=e111]:
-              - paragraph [ref=e112]: Empirical Evidence
-              - heading "Architectural Interventions" [level=2] [ref=e113]
-            - button "Examine all outcome reports" [ref=e114] [cursor=pointer]:
+                - paragraph [ref=e61]: EBITDA Yield
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: The Operator's Equation
+              - paragraph [ref=e64]: Growth isn't just about adding more capital or time. It's about removing the friction that suppresses your return on both. We isolate the exact locations where revenue is leaking.
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]: Live Diagnostic
+              - generic [ref=e69]: 01 / 03
+            - heading "How is your acquisition data routed to your sales or conversion team?" [level=3] [ref=e70]
+            - generic [ref=e71]:
+              - button "A Manual CRM entry or disjointed CSV uploads." [ref=e72]:
+                - generic [ref=e73]: A
+                - generic [ref=e74]: Manual CRM entry or disjointed CSV uploads.
+              - button "B Basic Zapier connections without intent filtering." [ref=e75]:
+                - generic [ref=e76]: B
+                - generic [ref=e77]: Basic Zapier connections without intent filtering.
+              - button "C Real-time algorithmic routing based on behavioral intent." [ref=e78]:
+                - generic [ref=e79]: C
+                - generic [ref=e80]: Real-time algorithmic routing based on behavioral intent.
+      - region "The Architecture Model" [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - paragraph [ref=e84]: Deployment Protocol
+            - heading "The Architecture Model" [level=2] [ref=e85]
+          - generic [ref=e87]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: "01"
+              - heading "Structural Audit" [level=3] [ref=e91]
+              - paragraph [ref=e92]: Mapping your current data flow and isolating the exact operational bottlenecks suppressing your enterprise margin.
+            - generic [ref=e94]:
+              - generic [ref=e95]: "02"
+              - heading "Logic Architecture" [level=3] [ref=e96]
+              - paragraph [ref=e97]: Engineering a bespoke conversion pipeline and strict routing rules to maximize your system throughput.
+            - generic [ref=e99]:
+              - generic [ref=e100]: "03"
+              - heading "Live Deployment" [level=3] [ref=e101]
+              - paragraph [ref=e102]: Integrating the new infrastructure into your live environment without disrupting daily execution.
+            - generic [ref=e104]:
+              - generic [ref=e105]: "04"
+              - heading "Yield Optimization" [level=3] [ref=e106]
+              - paragraph [ref=e107]: Continuous algorithmic refinement based on hard performance data and measured operational leverage.
+      - region "Architectural Interventions" [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: Empirical Evidence
+              - heading "Architectural Interventions" [level=2] [ref=e114]
+            - button "Examine all outcome reports" [ref=e115] [cursor=pointer]:
               - text: Examine Outcome Reports
-              - img [ref=e115]
-          - generic [ref=e117]:
-            - article [ref=e119]:
-              - img [ref=e121]:
-                - generic [ref=e132]: ROUTER
-              - generic "Case study categories" [ref=e133]:
-                - generic [ref=e134]: Real Estate
-                - generic [ref=e135]: Conversion Architecture
-              - heading "Institutional Real Estate Portfolio" [level=3] [ref=e136]
-              - paragraph [ref=e137]: Engineered a multi-node lead routing architecture to process high-volume inquiries, applying strict logic rules to segment intent and automate premium follow-up sequencing.
-              - generic [ref=e139]:
-                - generic [ref=e140]:
-                  - paragraph [ref=e141]: System Constraint
-                  - paragraph [ref=e142]: Lead Leakage at Scale
-                - generic [ref=e143]:
-                  - paragraph [ref=e144]: Verified Yield
-                  - generic [ref=e145]:
-                    - paragraph [ref=e146]: 31%
-                    - paragraph [ref=e147]: Increase in Qualified Conversion
-            - article [ref=e149]:
-              - img [ref=e151]:
-                - generic [ref=e161]: UNIFIED LAYER
-                - generic [ref=e163]: LTV
-              - generic "Case study categories" [ref=e164]:
-                - generic [ref=e165]: Healthcare
-                - generic [ref=e166]: Growth Architecture
-              - heading "Premium Private Clinic Network" [level=3] [ref=e167]
-              - paragraph [ref=e168]: Architected a centralised data ecosystem integrating disjointed clinical and marketing systems to calculate precise patient lifetime value and algorithmically optimise acquisition spend.
-              - generic [ref=e170]:
-                - generic [ref=e171]:
-                  - paragraph [ref=e172]: System Constraint
-                  - paragraph [ref=e173]: Fragmented Data Silos
-                - generic [ref=e174]:
-                  - paragraph [ref=e175]: Verified Yield
-                  - generic [ref=e176]:
-                    - paragraph [ref=e177]: 42%
-                    - paragraph [ref=e178]: Reduction in Patient Acquisition Cost
-      - region "Infrastructure over advice. Algorithms over effort." [ref=e179]:
-        - generic [ref=e180]:
-          - generic [ref=e182]:
-            - paragraph [ref=e183]: The Thesis
-            - heading "Infrastructure over advice. Algorithms over effort." [level=2] [ref=e184]:
+              - img [ref=e116]
+          - generic [ref=e118]:
+            - article [ref=e120]:
+              - img [ref=e122]:
+                - generic [ref=e133]: ROUTER
+              - generic "Case study categories" [ref=e134]:
+                - generic [ref=e135]: Real Estate
+                - generic [ref=e136]: Conversion Architecture
+              - heading "Institutional Real Estate Portfolio" [level=3] [ref=e137]
+              - generic [ref=e138]:
+                - generic [ref=e139]:
+                  - generic [ref=e140]: 01 / Problem
+                  - paragraph [ref=e141]: High-volume ad spend generating unpredictable lead quality across 12 decentralized developments.
+                - generic [ref=e142]:
+                  - generic [ref=e143]: 02 / Diagnosis
+                  - paragraph [ref=e144]: No central intent verification; sales teams were burning bandwidth on low-intent inquiries, eroding margin.
+                - generic [ref=e145]:
+                  - generic [ref=e146]: 03 / Architecture
+                  - paragraph [ref=e147]: Algorithmic routing logic layer mapping behavioral intent to dynamic lead scoring thresholds.
+                - generic [ref=e148]:
+                  - generic [ref=e149]: 04 / Implementation
+                  - paragraph [ref=e150]: Deployed a centralized webhook router intercepting, scoring, and instantly distributing high-intent leads to premium agents.
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - paragraph [ref=e154]: System Constraint
+                  - paragraph [ref=e155]: Lead Leakage at Scale
+                - generic [ref=e156]:
+                  - paragraph [ref=e157]: Verified Yield
+                  - generic [ref=e158]:
+                    - paragraph [ref=e159]: 31%
+                    - paragraph [ref=e160]: Increase in Qualified Conversion
+            - article [ref=e162]:
+              - img [ref=e164]:
+                - generic [ref=e174]: UNIFIED LAYER
+                - generic [ref=e176]: LTV
+              - generic "Case study categories" [ref=e177]:
+                - generic [ref=e178]: Healthcare
+                - generic [ref=e179]: Growth Architecture
+              - heading "Premium Private Clinic Network" [level=3] [ref=e180]
+              - generic [ref=e181]:
+                - generic [ref=e182]:
+                  - generic [ref=e183]: 01 / Problem
+                  - paragraph [ref=e184]: Rising patient acquisition costs despite increasing top-of-funnel marketing budgets.
+                - generic [ref=e185]:
+                  - generic [ref=e186]: 02 / Diagnosis
+                  - paragraph [ref=e187]: Fragmented data silos prevented the clinic from attributing exact Patient Lifetime Value (LTV) to specific marketing channels.
+                - generic [ref=e188]:
+                  - generic [ref=e189]: 03 / Architecture
+                  - paragraph [ref=e190]: Unified data pipeline connecting appointment booking systems directly to advertising conversion APIs.
+                - generic [ref=e191]:
+                  - generic [ref=e192]: 04 / Implementation
+                  - paragraph [ref=e193]: Deployed server-side conversion tracking and structural data mapping to feed deterministic LTV data back into algorithmic ad bidding.
+              - generic [ref=e195]:
+                - generic [ref=e196]:
+                  - paragraph [ref=e197]: System Constraint
+                  - paragraph [ref=e198]: Fragmented Data Silos
+                - generic [ref=e199]:
+                  - paragraph [ref=e200]: Verified Yield
+                  - generic [ref=e201]:
+                    - paragraph [ref=e202]: 42%
+                    - paragraph [ref=e203]: Reduction in Patient Acquisition Cost
+      - region "Infrastructure over advice. Algorithms over effort." [ref=e204]:
+        - generic [ref=e205]:
+          - generic [ref=e207]:
+            - paragraph [ref=e208]: The Thesis
+            - heading "Infrastructure over advice. Algorithms over effort." [level=2] [ref=e209]:
               - text: Infrastructure over advice.
               - text: Algorithms over effort.
-            - paragraph [ref=e185]: "North Star Advisory is built on a singular premise: sustainable growth is an engineering problem, not a marketing problem. We build tangible revenue infrastructure, deploy algorithmic execution, and measure success in measurable business outcomes."
-            - generic [ref=e187]:
-              - generic [ref=e189]:
-                - heading "Empirically Driven" [level=3] [ref=e192]
-                - paragraph [ref=e193]: We measure intervention success in validated enterprise value and structural revenue metrics — never vanity indicators.
-              - generic [ref=e195]:
-                - heading "Absolute Discretion" [level=3] [ref=e198]
-                - paragraph [ref=e199]: Operating with structural confidentiality for ambitious operators and private offices across the GCC.
-              - generic [ref=e201]:
-                - heading "Infrastructure Over Advice" [level=3] [ref=e204]
-                - paragraph [ref=e205]: We construct tangible business architecture, not theoretical slide decks. Every mandate produces operational infrastructure.
-              - generic [ref=e207]:
-                - heading "Operator-to-Operator" [level=3] [ref=e210]
-                - paragraph [ref=e211]: We understand the realities of scaling a business in the region. We speak the language of EBITDA, asset yield, and operational leverage.
-          - generic [ref=e214]:
-            - generic [ref=e216]:
-              - paragraph [ref=e217]: The Operator
-              - generic [ref=e218]:
-                - paragraph [ref=e219]: Hamza Hattab
-                - paragraph [ref=e220]: AI Engineering, USTHB
-                - paragraph [ref=e221]: "Specialization: GCC Revenue Systems"
-              - heading "I build the architecture that consulting firms only talk about." [level=3] [ref=e222]
-              - paragraph [ref=e223]: I built clinical data infrastructures and real estate lead-routing systems because I watched millions of dollars burn on theoretical strategy decks. You do not need more advice. You need systems that mathematically generate yield.
-            - generic [ref=e224]:
-              - generic [ref=e225]:
-                - heading "1. Logic over effort." [level=4] [ref=e226]
-                - paragraph [ref=e227]: Throwing more marketing budget at a broken pipeline is financial negligence. We fix the systemic conversion logic before we attempt to scale acquisition.
-              - generic [ref=e228]:
-                - heading "2. Data over opinions." [level=4] [ref=e229]
-                - paragraph [ref=e230]: Every recommendation we make is anchored in mathematical probability and validated by hard enterprise data. Assumptions are the enemy of yield.
-              - generic [ref=e231]:
-                - heading "3. Tangible over theoretical." [level=4] [ref=e232]
-                - paragraph [ref=e233]: We do not hand over a 100-page PDF and walk away. We build, deploy, and refine the actual systems and logic models that generate your revenue.
-              - generic [ref=e234]:
-                - heading "4. Accountability over retainers." [level=4] [ref=e235]
-                - paragraph [ref=e236]: We operate with the precise commercial urgency of a founder. Our success is explicitly tied to the measurable enterprise value we unlock for your firm.
-      - region "Apply for Executive Diagnostic" [ref=e237]:
-        - generic [ref=e240]:
-          - generic [ref=e241]:
-            - paragraph [ref=e247]: Executive Diagnostic
-            - heading "Apply for Executive Diagnostic" [level=2] [ref=e248]
-            - paragraph [ref=e249]: Commence a structured, confidential audit regarding your systemic friction, revenue bottlenecks, and algorithmic execution opportunities.
-          - form "Strategic review request form" [ref=e250]:
-            - generic [ref=e251]:
-              - generic [ref=e252]:
-                - generic: Full Name *
-                - textbox "Full Name" [ref=e253]
-              - generic [ref=e254]:
-                - generic: Corporate Email *
-                - textbox "Corporate Email" [ref=e255]
+            - paragraph [ref=e210]: "North Star Advisory is built on a singular premise: sustainable growth is an engineering problem, not a marketing problem. We build tangible revenue infrastructure, deploy algorithmic execution, and measure success in measurable business outcomes."
+            - generic [ref=e212]:
+              - generic [ref=e214]:
+                - heading "Empirically Driven" [level=3] [ref=e217]
+                - paragraph [ref=e218]: We measure intervention success in validated enterprise value and structural revenue metrics — never vanity indicators.
+              - generic [ref=e220]:
+                - heading "Absolute Discretion" [level=3] [ref=e223]
+                - paragraph [ref=e224]: Operating with structural confidentiality for ambitious operators and private offices across the GCC.
+              - generic [ref=e226]:
+                - heading "Infrastructure Over Advice" [level=3] [ref=e229]
+                - paragraph [ref=e230]: We construct tangible business architecture, not theoretical slide decks. Every mandate produces operational infrastructure.
+              - generic [ref=e232]:
+                - heading "Operator-to-Operator" [level=3] [ref=e235]
+                - paragraph [ref=e236]: We understand the realities of scaling a business in the region. We speak the language of EBITDA, asset yield, and operational leverage.
+          - generic [ref=e239]:
+            - generic [ref=e241]:
+              - paragraph [ref=e242]: The Operator
+              - generic [ref=e243]:
+                - paragraph [ref=e244]: Principal Advisor
+                - paragraph [ref=e245]: Revenue Systems & Growth Architecture
+                - paragraph [ref=e246]: "Specialization: GCC Revenue Systems"
+              - heading "We build the architecture that consulting firms only talk about." [level=3] [ref=e247]
+              - paragraph [ref=e248]: The firm engineers clinical data infrastructures and real estate lead-routing systems because we have witnessed millions of dollars burn on theoretical strategy decks. You do not need more advice. You need systems that mathematically generate yield.
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - heading "1. Logic over effort." [level=4] [ref=e251]
+                - paragraph [ref=e252]: Throwing more marketing budget at a broken pipeline is financial negligence. We fix the systemic conversion logic before we attempt to scale acquisition.
+              - generic [ref=e253]:
+                - heading "2. Data over opinions." [level=4] [ref=e254]
+                - paragraph [ref=e255]: Every recommendation we make is anchored in mathematical probability and validated by hard enterprise data. Assumptions are the enemy of yield.
               - generic [ref=e256]:
+                - heading "3. Tangible over theoretical." [level=4] [ref=e257]
+                - paragraph [ref=e258]: We do not hand over a 100-page PDF and walk away. We build, deploy, and refine the actual systems and logic models that generate your revenue.
+              - generic [ref=e259]:
+                - heading "4. Accountability over retainers." [level=4] [ref=e260]
+                - paragraph [ref=e261]: We operate with the precise commercial urgency of a founder. Our success is explicitly tied to the measurable enterprise value we unlock for your firm.
+      - region "Apply for Executive Diagnostic" [ref=e262]:
+        - generic [ref=e265]:
+          - generic [ref=e266]:
+            - paragraph [ref=e272]: Executive Diagnostic
+            - heading "Apply for Executive Diagnostic" [level=2] [ref=e273]
+            - paragraph [ref=e274]: Commence a structured, confidential audit regarding your systemic friction, revenue bottlenecks, and algorithmic execution opportunities.
+          - form "Strategic review request form" [ref=e275]:
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - generic: Full Name *
+                - textbox "Full Name" [ref=e278]
+              - generic [ref=e279]:
+                - generic: Corporate Email *
+                - textbox "Corporate Email" [ref=e280]
+              - generic [ref=e281]:
                 - generic: Company *
-                - textbox "Company" [ref=e257]
-              - generic [ref=e258]:
+                - textbox "Company" [ref=e282]
+              - generic [ref=e283]:
                 - generic: Industry *
-                - generic [ref=e259]:
-                  - combobox "Industry" [ref=e260] [cursor=pointer]:
+                - generic [ref=e284]:
+                  - combobox "Industry" [ref=e285] [cursor=pointer]:
                     - option "Real Estate" [selected]
                     - option "Clinics & Healthcare"
                     - option "Professional Services"
                     - option "Other"
                   - generic:
                     - img
-              - generic [ref=e261]:
+              - generic [ref=e286]:
                 - generic: Company Size *
-                - generic [ref=e262]:
-                  - combobox "Company Size" [ref=e263] [cursor=pointer]:
+                - generic [ref=e287]:
+                  - combobox "Company Size" [ref=e288] [cursor=pointer]:
                     - option "1 - 10 Employees"
                     - option "11 - 50 Employees" [selected]
                     - option "51 - 200 Employees"
                     - option "200+ Employees"
                   - generic:
                     - img
-              - generic [ref=e264]:
+              - generic [ref=e289]:
                 - generic: Primary Bottleneck *
-                - generic [ref=e265]:
-                  - combobox "Primary Bottleneck" [ref=e266] [cursor=pointer]:
+                - generic [ref=e290]:
+                  - combobox "Primary Bottleneck" [ref=e291] [cursor=pointer]:
                     - option "Lead Generation" [selected]
                     - option "Conversion"
                     - option "Follow-Up"
@@ -257,41 +281,41 @@ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
                     - option "Other"
                   - generic:
                     - img
-              - generic [ref=e267]:
+              - generic [ref=e292]:
                 - generic: Website (optional)
-                - textbox "Website (optional)" [ref=e268]:
+                - textbox "Website (optional)" [ref=e293]:
                   - /placeholder: https://
-              - generic [ref=e269]:
+              - generic [ref=e294]:
                 - generic: Additional Context (optional)
-                - textbox "Additional Context (optional)" [ref=e270]:
+                - textbox "Additional Context (optional)" [ref=e295]:
                   - /placeholder: Any specific challenges?
-              - button "Apply for Diagnostic" [ref=e274] [cursor=pointer]
-              - paragraph [ref=e275]: We respond within one business day. Absolute discretion guaranteed.
-          - generic [ref=e276]:
-            - paragraph [ref=e277]: Or contact us directly
-            - generic [ref=e278]:
-              - link "hamza@northstaradvisory.pro" [ref=e279] [cursor=pointer]:
+              - button "Apply for Diagnostic" [ref=e299] [cursor=pointer]
+              - paragraph [ref=e300]: We respond within one business day. Absolute discretion guaranteed.
+          - generic [ref=e301]:
+            - paragraph [ref=e302]: Or contact us directly
+            - generic [ref=e303]:
+              - link "hamza@northstaradvisory.pro" [ref=e304] [cursor=pointer]:
                 - /url: mailto:hamza@northstaradvisory.pro
-              - link "WhatsApp Business" [ref=e280] [cursor=pointer]:
-                - /url: https://wa.me/213549391101?text=Hi%20Hamza%2C%20I%20want%20to%20discuss%20a%20systemic%20audit.
-                - img [ref=e281]
+              - link "WhatsApp Business" [ref=e305] [cursor=pointer]:
+                - /url: https://wa.me/213776463005?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20systemic%20audit.
+                - img [ref=e306]
                 - text: WhatsApp Business
-  - contentinfo [ref=e283]:
-    - generic [ref=e285]:
-      - generic [ref=e286]: North Star Advisory
-      - navigation "Footer navigation" [ref=e287]:
-        - list [ref=e288]:
-          - listitem [ref=e289]:
-            - link "Privacy Policy" [ref=e290] [cursor=pointer]:
+  - contentinfo [ref=e308]:
+    - generic [ref=e310]:
+      - img "North Star Advisory" [ref=e312]
+      - navigation "Footer navigation" [ref=e313]:
+        - list [ref=e314]:
+          - listitem [ref=e315]:
+            - link "Privacy Policy" [ref=e316] [cursor=pointer]:
               - /url: "#"
-          - listitem [ref=e291]:
-            - link "GCC Compliance" [ref=e292] [cursor=pointer]:
+          - listitem [ref=e317]:
+            - link "GCC Compliance" [ref=e318] [cursor=pointer]:
               - /url: "#"
-          - listitem [ref=e293]:
-            - link "Secure Contact" [ref=e294] [cursor=pointer]:
+          - listitem [ref=e319]:
+            - link "Secure Contact" [ref=e320] [cursor=pointer]:
               - /url: "#contact"
-      - paragraph [ref=e295]: © 2026 North Star Advisory
-  - alert [ref=e296]
+      - paragraph [ref=e321]: © 2026 North Star Advisory
+  - alert [ref=e322]
 ```
 
 # Test source

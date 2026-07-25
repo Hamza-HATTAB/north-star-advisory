@@ -18,7 +18,7 @@ test.describe("Navigation", () => {
   test("navbar is visible and contains brand name", async ({ page }) => {
     const navbar = page.getByRole("banner");
     await expect(navbar).toBeVisible();
-    await expect(navbar.getByText("North Star Advisory")).toBeVisible();
+    await expect(navbar.getByAltText("North Star Advisory")).toBeVisible();
   });
 
   test("primary CTA button in navbar scrolls to contact form", async ({
