@@ -28,11 +28,12 @@ export function Navbar() {
     (href: string, label: string) => {
       setMobileOpen(false);
       trackCTAClick(label, "navbar");
-      // Smooth scroll to section
       const id = href.replace("#", "");
       const el = document.getElementById(id);
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.location.href = `/${href}`;
       }
     },
     []
@@ -42,7 +43,11 @@ export function Navbar() {
     setMobileOpen(false);
     trackCTAClick("Request a Growth Systems Diagnostic", "navbar");
     const el = document.getElementById("contact");
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.location.href = "/#contact";
+    }
   }, []);
 
   return (

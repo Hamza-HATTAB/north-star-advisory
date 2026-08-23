@@ -113,7 +113,7 @@ export function LeadCapture() {
               className="text-body-lg"
               style={{ color: "var(--color-on-surface-variant)" }}
             >
-              Your request for a Growth Systems Diagnostic has been received. Hamza Hattab will review your enquiry and respond within one business day.
+              Your request for a Growth Systems Diagnostic has been received. Hamza Hattab will review your enquiry and respond within two business days.
             </p>
           </div>
         </div>
@@ -548,7 +548,7 @@ export function LeadCapture() {
                   className="text-center text-label-caps"
                   style={{ color: "var(--color-secondary)", fontSize: "11px" }}
                 >
-                  Strict confidentiality guaranteed. We review all submissions and respond within one business day.
+                  Strict confidentiality guaranteed. Read our <a href="/privacy" className="underline">Privacy Policy</a>. We review all submissions and respond within two business days.
                 </p>
               </div>
             </form>

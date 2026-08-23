@@ -1,12 +1,16 @@
 "use client";
 
+import Link from "next/link";
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
-    { label: "Privacy Policy", href: "#" },
-    { label: "GCC Compliance", href: "#" },
-    { label: "Secure Contact", href: "#contact" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "GCC Compliance", href: "/gcc-compliance" },
+    { label: "About Founder", href: "/about" },
+    { label: "Advisory Services", href: "/advisory-services" },
+    { label: "Secure Contact", href: "/contact" },
   ];
 
   return (
@@ -22,13 +26,15 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/assets/brand/logo-symbol-light.svg" 
-              alt="North Star Advisory" 
-              width={40} 
-              height={40} 
-              style={{ display: "block" }}
-            />
+            <Link href="/" aria-label="North Star Advisory — Home">
+              <img 
+                src="/assets/brand/logo-symbol-light.svg" 
+                alt="North Star Advisory" 
+                width={40} 
+                height={40} 
+                style={{ display: "block" }}
+              />
+            </Link>
           </div>
 
           {/* Links */}
@@ -36,7 +42,7 @@ export function Footer() {
             <ul className="flex flex-wrap justify-center gap-8 list-none p-0 m-0">
               {footerLinks.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-label-caps transition-colors duration-200"
                     style={{ color: "var(--color-secondary-fixed-dim)", textDecoration: "none" }}
@@ -49,7 +55,7 @@ export function Footer() {
                     }
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -75,4 +75,20 @@ test.describe("Navigation", () => {
       await expect(section).toBeAttached();
     }
   });
+
+  test("all public routes load successfully with 200 status", async ({ page }) => {
+    const routes = [
+      { path: "/about", heading: /Founder|North Star/i },
+      { path: "/contact", heading: /Request a Growth Systems Diagnostic/i },
+      { path: "/privacy", heading: /Privacy Policy/i },
+      { path: "/advisory-services", heading: /What We Fix/i },
+      { path: "/gcc-compliance", heading: /GCC Compliance/i },
+    ];
+
+    for (const route of routes) {
+      const response = await page.goto(route.path);
+      expect(response?.status()).toBe(200);
+      await expect(page.getByRole("heading", { name: route.heading }).first()).toBeVisible();
+    }
+  });
 });

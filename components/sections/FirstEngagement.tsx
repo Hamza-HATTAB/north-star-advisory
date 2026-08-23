@@ -150,7 +150,7 @@ export function FirstEngagement() {
                 Ready to identify where your enquiries are lost?
               </h3>
               <p className="text-body-md" style={{ color: "var(--color-outline-variant)" }}>
-                Request your diagnostic. We will review your business model and confirm diagnostic availability within one business day.
+                Request your diagnostic. We will review your business model and confirm diagnostic availability within two business days.
               </p>
             </div>
             <button

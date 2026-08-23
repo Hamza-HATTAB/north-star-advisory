@@ -15,7 +15,7 @@ test.describe("Responsive Layout", () => {
     }) => {
       await page.setViewportSize({ width: vp.width, height: vp.height });
       await page.goto("/");
-      await page.waitForLoadState("networkidle");
+      await page.waitForLoadState("domcontentloaded");
 
       // No horizontal overflow
       const bodyWidth = await page.evaluate(() => document.body.scrollWidth);

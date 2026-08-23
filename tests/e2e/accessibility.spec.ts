@@ -4,8 +4,8 @@ import AxeBuilder from "@axe-core/playwright";
 test.describe("Accessibility", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/");
-    // Wait for page to be fully interactive
-    await page.waitForLoadState("networkidle");
+    // Wait for DOM content to be ready (avoiding external CDN networkidle hangs)
+    await page.waitForLoadState("domcontentloaded");
   });
 
   test("no critical accessibility violations on page load", async ({ page }) => {
