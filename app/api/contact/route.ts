@@ -120,7 +120,7 @@ export async function POST(req: NextRequest) {
     }
 
     const {
-      name, email, company, industry, companySize, primaryBottleneck,
+      name, email, company, role, market, industry, companySize, primaryBottleneck,
       website, additionalContext, turnstileToken,
       gfiScore, gfiSeverity, gfiAnswers,
     } = result.data;
@@ -165,12 +165,14 @@ export async function POST(req: NextRequest) {
     }
 
     const emailContent = [
-      "New Executive Diagnostic Application",
+      "New Growth Systems Diagnostic Application",
       "------------------------------------",
       "Lead Profile",
       `Name:      ${name}`,
       `Email:     ${email}`,
       `Company:   ${company}`,
+      `Role:      ${role || "Not specified"}`,
+      `Market:    ${market || "Not specified"}`,
       `Website:   ${website || "Not provided"}`,
       `Industry:  ${industry}`,
       `Size:      ${companySize}`,

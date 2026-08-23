@@ -281,8 +281,11 @@ export function GrowthFrictionIndex() {
               <p className="text-body-lg font-semibold mb-2" style={{ color: "var(--color-primary)" }}>
                 The Operator&apos;s Equation
               </p>
-              <p className="text-body-md" style={{ color: "var(--color-on-surface-variant)" }}>
-                Growth isn&apos;t just about adding more capital or time. It&apos;s about removing the friction that suppresses your return on both. We isolate the exact locations where revenue is leaking.
+              <p className="text-body-md mb-3" style={{ color: "var(--color-on-surface-variant)" }}>
+                Growth isn&apos;t just about adding more capital or time. It&apos;s about removing the friction that suppresses your return on both. This tool provides an initial, illustrative operational friction signal across 3 diagnostic domains.
+              </p>
+              <p className="text-[11px] font-mono uppercase tracking-wider" style={{ color: "var(--color-secondary)" }}>
+                *Illustrative Framework Signal — Detailed Quantification Executed During Full 5-Day Diagnostic
               </p>
             </div>
           </div>

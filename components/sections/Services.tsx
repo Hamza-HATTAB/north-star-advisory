@@ -5,21 +5,21 @@ import { servicePillars } from "@/content";
 export function Services() {
   return (
     <section
-      id="services"
+      id="what-we-fix"
       className="section-pad"
       aria-labelledby="services-heading"
-      style={{ backgroundColor: "var(--color-surface)" }}
+      style={{ backgroundColor: "var(--color-surface-container-low)" }}
     >
       <div className="container-main">
         {/* Header */}
         <AnimatedSection className="mb-16 md:mb-20">
-          <SectionLabel>System Design</SectionLabel>
+          <SectionLabel>Core Solutions</SectionLabel>
           <h2
             id="services-heading"
-            className="text-headline-md max-w-xl"
+            className="text-headline-md max-w-2xl"
             style={{ color: "var(--color-primary)" }}
           >
-            Engineering Predictable Outcomes
+            What We Fix: Operational Systems Engineering
           </h2>
         </AnimatedSection>
 

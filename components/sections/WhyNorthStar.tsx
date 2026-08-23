@@ -80,17 +80,17 @@ export function WhyNorthStar() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
               <div className="md:col-span-5 md:pr-8 flex flex-col justify-between">
                 <div>
-                  <SectionLabel>The Operator</SectionLabel>
+                  <SectionLabel>Founder & Operator</SectionLabel>
                   <div className="mb-8 pb-8" style={{ borderBottom: "1px dashed rgba(0,23,54,0.15)" }}>
-                    <p className="text-headline-sm" style={{ color: "var(--color-primary)" }}>Principal Advisor</p>
-                    <p className="text-label-caps mt-3" style={{ color: "var(--color-secondary)" }}>Revenue Systems & Growth Architecture</p>
-                    <p className="text-label-caps mt-1" style={{ color: "var(--color-secondary)" }}>Specialization: GCC Revenue Systems</p>
+                    <p className="text-headline-sm" style={{ color: "var(--color-primary)" }}>Hamza Hattab</p>
+                    <p className="text-label-caps mt-3" style={{ color: "var(--color-secondary)" }}>Founder & Growth Systems Engineer</p>
+                    <p className="text-label-caps mt-1" style={{ color: "var(--color-secondary)" }}>Focus: GCC Real Estate & High-Value Workflows</p>
                   </div>
                   <h3 className="text-headline-sm mb-6" style={{ color: "var(--color-primary)", lineHeight: 1.3 }}>
-                    We build the architecture that consulting firms only talk about.
+                    Founder-led systems engineering for GCC operators.
                   </h3>
                   <p className="text-body-md mb-8" style={{ color: "var(--color-secondary)" }}>
-                    The firm engineers clinical data infrastructures and real estate lead-routing systems because we have witnessed millions of dollars burn on theoretical strategy decks. You do not need more advice. You need systems that mathematically generate yield.
+                    North Star Advisory is a founder-led engineering practice. When you engage us, you work directly with Hamza Hattab to audit your process, map your revenue workflow, write the integration code, deploy the automation, and measure the operational result.
                   </p>
                 </div>
               </div>

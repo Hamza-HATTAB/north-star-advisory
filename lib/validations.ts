@@ -17,6 +17,15 @@ export const contactSchema = z.object({
     .min(1, "Please enter your company name")
     .max(200, "Company name must be less than 200 characters")
     .trim(),
+  role: z
+    .string()
+    .max(100, "Role title must be less than 100 characters")
+    .trim()
+    .optional(),
+  market: z
+    .string()
+    .max(100)
+    .optional(),
   industry: z
     .string()
     .min(1, "Please select your industry")

@@ -40,7 +40,7 @@ export function Navbar() {
 
   const handleCTAClick = useCallback(() => {
     setMobileOpen(false);
-    trackCTAClick("Request Strategic Review", "navbar");
+    trackCTAClick("Request a Growth Systems Diagnostic", "navbar");
     const el = document.getElementById("contact");
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
@@ -105,9 +105,9 @@ export function Navbar() {
           <button
             className="btn-primary hidden lg:flex"
             onClick={handleCTAClick}
-            aria-label="Request a Strategic Review"
+            aria-label="Request a Growth Systems Diagnostic"
           >
-            Request Strategic Review
+            Request Diagnostic
           </button>
 
           {/* Mobile Menu Toggle */}
@@ -160,7 +160,7 @@ export function Navbar() {
             className="btn-primary w-full"
             onClick={handleCTAClick}
           >
-            Request Strategic Review
+            Request Diagnostic
           </button>
         </div>
       </div>

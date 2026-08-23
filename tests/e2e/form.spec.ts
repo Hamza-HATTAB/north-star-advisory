@@ -35,7 +35,7 @@ test.describe("Contact Form", () => {
 
   test("submit button has correct label text", async ({ page }) => {
     const btn = page.locator("#contact-submit");
-    await expect(btn).toContainText(/apply for diagnostic/i);
+    await expect(btn).toContainText(/request a growth systems diagnostic/i);
   });
 
   test("form fields have correct accessibility attributes", async ({ page }) => {

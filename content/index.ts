@@ -5,146 +5,225 @@ import type {
   CaseStudy,
   GFIDomain,
   Differentiator,
+  WhoWeHelpCategory,
+  DiagnosticDeliverable,
 } from "@/types";
 
 export const navLinks: NavLink[] = [
-  { label: "Core Capabilities", href: "#services" },
-  { label: "The Protocol", href: "#methodology" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "Our Thesis", href: "#why-north-star" },
+  { label: "Who We Help", href: "#who-we-help" },
+  { label: "What We Fix", href: "#what-we-fix" },
+  { label: "The Diagnostic", href: "#diagnostic" },
+  { label: "Proof of Method", href: "#case-studies" },
+  { label: "About Founder", href: "#why-north-star" },
+];
+
+export const whoWeHelpCategories: WhoWeHelpCategory[] = [
+  {
+    badge: "Primary Focus — KSA & UAE",
+    title: "GCC Real Estate Developers & Brokerages",
+    description:
+      "Businesses managing multiple projects, ad channels, and sales teams where enquiry-to-appointment conversion is leaking.",
+    keyProblems: [
+      "Inquiries sitting unassigned for hours after ad campaigns fire",
+      "Sales agents wasting bandwidth on unqualified tire-kickers",
+      "Lack of real-time visibility between lead submission and CRM handoff",
+    ],
+    systemFix:
+      "Real-Estate Lead-to-Appointment System: Instant intent scoring, automated routing, speed-to-lead notification, and persistent follow-up workflows.",
+  },
+  {
+    badge: "Secondary Vertical",
+    title: "Premium Healthcare & Private Clinics",
+    description:
+      "Clinic networks and specialized medical providers needing deterministic patient acquisition and booking workflows.",
+    keyProblems: [
+      "Rising cost per booking despite heavy marketing spend",
+      "High drop-off between website inquiry and confirmed appointment",
+      "Disconnected booking software and marketing attribution",
+    ],
+    systemFix:
+      "Patient Booking Pipeline: Server-side tracking, automated intake qualification, and CRM/EHR appointment sync.",
+  },
+  {
+    badge: "Secondary Vertical",
+    title: "High-Value Professional Services",
+    description:
+      "B2B advisory, legal, corporate structuring, and financial service firms handling high-ticket client inquiries.",
+    keyProblems: [
+      "Manual intake processes creating friction for high-net-worth prospects",
+      "Inconsistent follow-up on high-intent corporate inquiries",
+      "No structured data tracking pipeline health or team response velocity",
+    ],
+    systemFix:
+      "B2B Qualification Engine: Structured diagnostic intake, automated routing to senior advisors, and pipeline telemetry.",
+  },
 ];
 
 export const gfiDomains: GFIDomain[] = [
   {
-    title: "Market Friction",
+    title: "Response & Routing Speed",
     description:
-      "Capital deployed into fragmented channels generating variable returns. We eliminate acquisition volatility.",
-    frictionPoint1: "Unpredictable Lead Flow",
-    frictionPoint2: "High Acquisition Cost",
+      "Enquiries cooling off in queues before reaching sales reps. We automate instant qualification and route leads in seconds.",
+    frictionPoint1: "Delayed Response Time (>15 min)",
+    frictionPoint2: "Unfiltered Lead Assignment",
   },
   {
-    title: "Conversion Friction",
+    title: "Qualification & Intent Logic",
     description:
-      "High-intent opportunities expiring in bloated pipelines. We engineer the exact logic path to closed revenue.",
-    frictionPoint1: "Extended Sales Cycles",
-    frictionPoint2: "Low Qualified Win Rate",
+      "Sales teams spending hours on low-intent prospects. We engineer smart qualification logic into intake channels.",
+    frictionPoint1: "Unqualified Inquiry Bandwidth Drain",
+    frictionPoint2: "No Intent Scoring Thresholds",
   },
   {
-    title: "Execution Friction",
+    title: "CRM Handoff & Follow-Up",
     description:
-      "Manual redundancies eroding margins. We deploy algorithmic execution to protect executive bandwidth.",
-    frictionPoint1: "Margin Erosion",
-    frictionPoint2: "Executive Bandwidth Loss",
+      "Leads dropping out between campaign, website, CRM, and agent assignment. We build resilient multi-touch workflows.",
+    frictionPoint1: "CRM Integration Gaps",
+    frictionPoint2: "Cold Prospect Abandonment",
   },
 ];
 
 export const servicePillars: ServicePillar[] = [
   {
     number: "01",
-    title: "Revenue Architecture",
+    title: "Speed-to-Lead & Instant Qualification",
     description:
-      "We design acquisition engines that mathematically reduce reliance on variable channels, establishing a compounding flow of qualified opportunities through structured data feedback loops.",
-    systemImpact: "Lowered Blended CAC",
-    strategicOutcome: "Compounding Pipeline Yield",
+      "We replace static forms and manual handling with instant intent qualification systems that capture prospect details, evaluate intent in real time, and trigger immediate sales notifications.",
+    systemImpact: "Sub-2-Minute Lead Response",
+    strategicOutcome: "Higher Appointment Show Rate",
   },
   {
     number: "02",
-    title: "Conversion Logic",
+    title: "Automated CRM Routing & Sales Assignment",
     description:
-      "We map the critical path from interest to closed revenue, removing friction points and aligning automated sales processes with the buyer's cognitive decision journey.",
-    systemImpact: "Accelerated Deal Velocity",
-    strategicOutcome: "Increased Qualified Win Rate",
+      "We map your exact sales structure and build resilient API integrations that pass scored leads directly into your CRM, assign them to the right agent, and track response status.",
+    systemImpact: "Zero Lead Leakage",
+    strategicOutcome: "Eliminated Manual Data Entry",
   },
   {
     number: "03",
-    title: "Algorithmic Execution",
+    title: "Multi-Touch Pipeline & Re-engagement Automation",
     description:
-      "We deploy intelligent infrastructure via API integrations and custom logic layers to handle repetitive operations, freeing the operator for high-leverage strategic execution.",
-    systemImpact: "Eliminated Manual Redundancy",
-    strategicOutcome: "Protected Profit Margins",
+      "We design automated, behavioral-triggered follow-up sequences across SMS, WhatsApp, and email so cold or stalled inquiries are systematically re-engaged without rep burnout.",
+    systemImpact: "Persistent Re-engagement",
+    strategicOutcome: "Maximized Pipeline Lifetime Value",
+  },
+];
+
+export const diagnosticDeliverables: DiagnosticDeliverable[] = [
+  {
+    title: "1. Workflow & Leakage Audit",
+    description:
+      "Full mapping of your current lead path from ad click to website form, qualification, CRM entry, sales assignment, and response time.",
+  },
+  {
+    title: "2. Bottleneck Quantification",
+    description:
+      "Identification of specific points where qualified prospects are lost, delayed, or misrouted across your sales operations.",
+  },
+  {
+    title: "3. Prioritized Repair Plan",
+    description:
+      "A concrete architectural roadmap detailing exact software, API integrations, routing rules, and automation required to fix the leaks.",
+  },
+  {
+    title: "4. Systems Architecture Map",
+    description:
+      "A clear technical diagram showing how your marketing channels, lead capture, CRM, and sales team will connect seamlessly.",
   },
 ];
 
 export const methodologySteps: MethodologyStep[] = [
   {
     number: "01",
-    title: "Structural Audit",
+    title: "Research & Audit",
     description:
-      "Mapping your current data flow and isolating the exact operational bottlenecks suppressing your enterprise margin.",
+      "Mapping your current lead flow, response times, CRM handoff, and sales assignment to find exact leakage points.",
   },
   {
     number: "02",
     title: "Logic Architecture",
     description:
-      "Engineering a bespoke conversion pipeline and strict routing rules to maximize your system throughput.",
+      "Engineering the qualification rules, routing logic, and automated workflows required for your specific operational model.",
   },
   {
     number: "03",
-    title: "Live Deployment",
+    title: "Build & Deploy",
     description:
-      "Integrating the new infrastructure into your live environment without disrupting daily execution.",
+      "Writing clean integrations, connecting webhooks, and configuring CRM/automation infrastructure without disrupting daily operations.",
   },
   {
     number: "04",
-    title: "Yield Optimization",
+    title: "Measure & Optimize",
     description:
-      "Continuous algorithmic refinement based on hard performance data and measured operational leverage.",
+      "Tracking response velocity, qualification accuracy, and appointment conversion rates to continuously refine system yield.",
   },
 ];
 
 export const caseStudies: CaseStudy[] = [
   {
-    tags: ["Real Estate", "Conversion Architecture"],
-    headline: "Institutional Real Estate Portfolio",
-    problem: "High-volume ad spend generating unpredictable lead quality across 12 decentralized developments.",
-    diagnosis: "No central intent verification; sales teams were burning bandwidth on low-intent inquiries, eroding margin.",
-    architecture: "Algorithmic routing logic layer mapping behavioral intent to dynamic lead scoring thresholds.",
-    implementation: "Deployed a centralized webhook router intercepting, scoring, and instantly distributing high-intent leads to premium agents.",
-    constraint: "Lead Leakage at Scale",
-    outcomeStat: "31%",
-    outcomeLabel: "Increase in Qualified Conversion",
+    tags: ["Real Estate", "Lead Routing", "Illustrative Framework"],
+    headline: "Real Estate Multi-Project Lead Routing Architecture",
+    problem: "Ad spend across multiple developments generated high lead volume, but response times averaged 4 hours and leads went to unassigned spreadsheets.",
+    diagnosis: "No centralized intent scoring or real-time routing; sales agents picked leads manually, favoring low-value inquiries.",
+    architecture: "Algorithmic webhook router with instant qualification thresholds and agent round-robin assignment.",
+    implementation: "Engineered a centralized lead-capture router intercepting enquiries, scoring buyer budget/timeline, and delivering instant WhatsApp/CRM alerts to top agents.",
+    constraint: "Slow Response & Unassigned Leads",
+    outcomeStat: "System Fix",
+    outcomeLabel: "Instant Routing & Qualified Appointment Lift",
   },
   {
-    tags: ["Healthcare", "Growth Architecture"],
-    headline: "Premium Private Clinic Network",
-    problem: "Rising patient acquisition costs despite increasing top-of-funnel marketing budgets.",
-    diagnosis: "Fragmented data silos prevented the clinic from attributing exact Patient Lifetime Value (LTV) to specific marketing channels.",
-    architecture: "Unified data pipeline connecting appointment booking systems directly to advertising conversion APIs.",
-    implementation: "Deployed server-side conversion tracking and structural data mapping to feed deterministic LTV data back into algorithmic ad bidding.",
-    constraint: "Fragmented Data Silos",
-    outcomeStat: "42%",
-    outcomeLabel: "Reduction in Patient Acquisition Cost",
+    tags: ["Healthcare", "Attribution Pipeline", "Illustrative Framework"],
+    headline: "Clinic Network Patient Booking Workflow",
+    problem: "High cost per booking with heavy drop-off between online booking requests and actual clinic visits.",
+    diagnosis: "Disconnected appointment booking widget and advertising platforms created blind spots in patient journey data.",
+    architecture: "Unified data pipeline mapping online booking submissions directly to ad platform conversion APIs.",
+    implementation: "Deployed server-side conversion tracking and automated WhatsApp booking confirmations to confirm patient appointments instantly.",
+    constraint: "Booking Drop-Off & Attribution Gaps",
+    outcomeStat: "System Fix",
+    outcomeLabel: "Automated Confirmation & Lower CAC",
   },
 ];
 
 export const differentiators: Differentiator[] = [
   {
-    title: "Empirically Driven",
+    title: "Founder-Engineer Execution",
     description:
-      "We measure intervention success in validated enterprise value and structural revenue metrics — never vanity indicators.",
+      "You work directly with Hamza Hattab—a systems engineer who researches, architects, writes the code, deploys the integrations, and measures performance.",
   },
   {
-    title: "Absolute Discretion",
+    title: "Practical Systems Over Slide Decks",
     description:
-      "Operating with structural confidentiality for ambitious operators and private offices across the GCC.",
+      "We build tangible software, webhooks, and CRM automation rather than handing off theoretical consulting reports.",
   },
   {
-    title: "Infrastructure Over Advice",
+    title: "Focused GCC Specialization",
     description:
-      "We construct tangible business architecture, not theoretical slide decks. Every mandate produces operational infrastructure.",
+      "Tailored specifically for operators in Saudi Arabia and the UAE who require fast, localized, and discreet execution.",
   },
   {
-    title: "Operator-to-Operator",
+    title: "Empirical & Measured",
     description:
-      "We understand the realities of scaling a business in the region. We speak the language of EBITDA, asset yield, and operational leverage.",
+      "Every project starts with a diagnostic and ends with concrete operational measurement—response speed, qualification rate, and appointments booked.",
   },
 ];
 
+export const marketOptions = [
+  { value: "saudi_arabia", label: "Saudi Arabia (KSA)" },
+  { value: "uae", label: "United Arab Emirates (UAE)" },
+  { value: "qatar", label: "Qatar" },
+  { value: "kuwait", label: "Kuwait" },
+  { value: "bahrain", label: "Bahrain" },
+  { value: "oman", label: "Oman" },
+  { value: "other_gcc", label: "Other GCC / Middle East" },
+  { value: "international", label: "International" },
+];
+
 export const industryOptions = [
-  { value: "real_estate", label: "Real Estate" },
-  { value: "clinics_healthcare", label: "Clinics & Healthcare" },
-  { value: "professional_services", label: "Professional Services" },
-  { value: "other", label: "Other" },
+  { value: "real_estate", label: "Real Estate (Developer / Brokerage)" },
+  { value: "clinics_healthcare", label: "Healthcare & Private Clinics" },
+  { value: "professional_services", label: "Professional Services & Advisory" },
+  { value: "other", label: "Other GCC Operator" },
 ];
 
 export const companySizeOptions = [
@@ -155,12 +234,11 @@ export const companySizeOptions = [
 ];
 
 export const bottleneckOptions = [
-  { value: "lead_generation", label: "Lead Generation" },
-  { value: "conversion", label: "Conversion" },
-  { value: "follow_up", label: "Follow-Up" },
-  { value: "sales_process", label: "Sales Process" },
-  { value: "operations", label: "Operations" },
-  { value: "customer_experience", label: "Customer Experience" },
-  { value: "ai_automation", label: "AI Automation" },
-  { value: "other", label: "Other" },
+  { value: "lead_response_speed", label: "Lead Response Speed & Routing" },
+  { value: "lead_qualification", label: "Lead Qualification & Intent Filtering" },
+  { value: "crm_handoff", label: "CRM Integration & Sales Handoff" },
+  { value: "follow_up_automation", label: "Follow-Up & Pipeline Re-engagement" },
+  { value: "marketing_attribution", label: "Marketing ROI & Attribution Data" },
+  { value: "other", label: "Other Operational Bottleneck" },
 ];
+

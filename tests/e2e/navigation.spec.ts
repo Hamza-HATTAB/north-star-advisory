@@ -25,7 +25,7 @@ test.describe("Navigation", () => {
     page,
   }) => {
     const ctaBtn = page.getByRole("button", {
-      name: /request strategic review/i,
+      name: /request diagnostic|request a growth systems diagnostic/i,
     }).first();
     await ctaBtn.click();
     // Contact section should be in view
@@ -62,6 +62,9 @@ test.describe("Navigation", () => {
 
   test("all main sections are present", async ({ page }) => {
     for (const id of [
+      "#who-we-help",
+      "#what-we-fix",
+      "#diagnostic",
       "#growth-friction-index",
       "#methodology",
       "#case-studies",

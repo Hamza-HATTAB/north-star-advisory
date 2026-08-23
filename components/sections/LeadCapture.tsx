@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { contactSchema, type ContactFormInput } from "@/lib/validations";
-import { industryOptions, companySizeOptions, bottleneckOptions } from "@/content";
+import { industryOptions, companySizeOptions, bottleneckOptions, marketOptions } from "@/content";
 import { trackFormStart, trackFormSuccess, trackFormError } from "@/lib/analytics";
 import type { ContactFormResponse } from "@/types";
 import { useGFIStore } from "@/lib/store";
@@ -29,7 +29,7 @@ export function LeadCapture() {
     reset,
   } = useForm<ContactFormInput>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { industry: "real_estate", companySize: "11_50", primaryBottleneck: "lead_generation" },
+    defaultValues: { market: "saudi_arabia", industry: "real_estate", companySize: "11_50", primaryBottleneck: "lead_response_speed" },
   });
 
   const handleFieldFocus = useCallback(() => {
@@ -107,14 +107,13 @@ export function LeadCapture() {
               className="text-headline-md mb-4"
               style={{ color: "var(--color-primary)" }}
             >
-              Request Received
+              Diagnostic Request Received
             </h2>
             <p
               className="text-body-lg"
               style={{ color: "var(--color-on-surface-variant)" }}
             >
-              Your strategic review request has been received. We will respond
-              within one business day.
+              Your request for a Growth Systems Diagnostic has been received. Hamza Hattab will review your enquiry and respond within one business day.
             </p>
           </div>
         </div>
@@ -159,21 +158,20 @@ export function LeadCapture() {
               </div>
 
               <SectionLabel className="text-center">
-                Executive Diagnostic
+                Growth Systems Diagnostic
               </SectionLabel>
               <h2
                 id="contact-heading"
                 className="text-headline-md mb-4"
                 style={{ color: "var(--color-primary)" }}
               >
-                Apply for Executive Diagnostic
+                Request a Growth Systems Diagnostic
               </h2>
               <p
                 className="text-body-lg"
                 style={{ color: "var(--color-secondary)" }}
               >
-                Commence a structured, confidential audit regarding your systemic
-                friction, revenue bottlenecks, and algorithmic execution opportunities.
+                Submit your business profile to initiate a structured 5-day audit of your lead routing, qualification, CRM handoff, and follow-up workflow.
               </p>
             </div>
 
@@ -181,7 +179,7 @@ export function LeadCapture() {
             <form
               onSubmit={handleSubmit(onSubmit)}
               noValidate
-              aria-label="Strategic review request form"
+              aria-label="Growth systems diagnostic request form"
             >
               <div className="space-y-10 max-w-md mx-auto">
                 {/* Name */}
@@ -254,7 +252,7 @@ export function LeadCapture() {
                     htmlFor="contact-company"
                     className="input-label"
                   >
-                    Company <span aria-hidden="true">*</span>
+                    Company Name <span aria-hidden="true">*</span>
                   </label>
                   <input
                     id="contact-company"
@@ -264,7 +262,7 @@ export function LeadCapture() {
                     aria-describedby={errors.company ? "company-error" : undefined}
                     aria-invalid={!!errors.company}
                     className={`input-field ${errors.company ? "error" : ""}`}
-                    placeholder="Company"
+                    placeholder="Company Name"
                     onFocus={handleFieldFocus}
                     {...register("company")}
                   />
@@ -280,13 +278,70 @@ export function LeadCapture() {
                   )}
                 </div>
 
+                {/* Role / Title (optional) */}
+                <div className="relative">
+                  <label
+                    htmlFor="contact-role"
+                    className="input-label"
+                  >
+                    Role / Title{" "}
+                    <span
+                      style={{ color: "var(--color-outline)", fontSize: "10px", letterSpacing: "0.05em", textTransform: "none", fontWeight: 400 }}
+                    >
+                      (optional)
+                    </span>
+                  </label>
+                  <input
+                    id="contact-role"
+                    type="text"
+                    autoComplete="organization-title"
+                    className={`input-field ${errors.role ? "error" : ""}`}
+                    placeholder="e.g. Managing Director, CMO, Operations Head"
+                    onFocus={handleFieldFocus}
+                    {...register("role")}
+                  />
+                </div>
+
+                {/* Market / Country */}
+                <div className="relative">
+                  <label
+                    htmlFor="contact-market"
+                    className="input-label"
+                  >
+                    Primary Market / Country
+                  </label>
+                  <div className="relative">
+                    <select
+                      id="contact-market"
+                      className="input-field appearance-none pr-8"
+                      style={{ cursor: "pointer" }}
+                      onFocus={handleFieldFocus}
+                      {...register("market")}
+                    >
+                      {marketOptions.map((opt) => (
+                        <option key={opt.value} value={opt.value}>
+                          {opt.label}
+                        </option>
+                      ))}
+                    </select>
+                    <div
+                      className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none"
+                      aria-hidden="true"
+                    >
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                        <path d="M1 1L6 7L11 1" stroke="var(--color-primary)" strokeWidth="1.5" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Industry */}
                 <div className="relative">
                   <label
                     htmlFor="contact-industry"
                     className="input-label"
                   >
-                    Industry <span aria-hidden="true">*</span>
+                    Industry Sector <span aria-hidden="true">*</span>
                   </label>
                   <div className="relative">
                     <select
@@ -305,7 +360,6 @@ export function LeadCapture() {
                         </option>
                       ))}
                     </select>
-                    {/* Chevron */}
                     <div
                       className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none"
                       aria-hidden="true"
@@ -323,7 +377,7 @@ export function LeadCapture() {
                     htmlFor="contact-companySize"
                     className="input-label"
                   >
-                    Company Size <span aria-hidden="true">*</span>
+                    Team Size <span aria-hidden="true">*</span>
                   </label>
                   <div className="relative">
                     <select
@@ -342,7 +396,6 @@ export function LeadCapture() {
                         </option>
                       ))}
                     </select>
-                    {/* Chevron */}
                     <div
                       className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none"
                       aria-hidden="true"
@@ -360,7 +413,7 @@ export function LeadCapture() {
                     htmlFor="contact-bottleneck"
                     className="input-label"
                   >
-                    Primary Bottleneck <span aria-hidden="true">*</span>
+                    Primary Operational Bottleneck <span aria-hidden="true">*</span>
                   </label>
                   <div className="relative">
                     <select
@@ -379,7 +432,6 @@ export function LeadCapture() {
                         </option>
                       ))}
                     </select>
-                    {/* Chevron */}
                     <div
                       className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none"
                       aria-hidden="true"
@@ -397,7 +449,7 @@ export function LeadCapture() {
                     htmlFor="contact-website"
                     className="input-label"
                   >
-                    Website{" "}
+                    Website / Portal URL{" "}
                     <span
                       style={{ color: "var(--color-outline)", fontSize: "10px", letterSpacing: "0.05em", textTransform: "none", fontWeight: 400 }}
                     >
@@ -428,7 +480,7 @@ export function LeadCapture() {
                     htmlFor="contact-context"
                     className="input-label"
                   >
-                    Additional Context{" "}
+                    Additional Operational Context{" "}
                     <span
                       style={{ color: "var(--color-outline)", fontSize: "10px", letterSpacing: "0.05em", textTransform: "none", fontWeight: 400 }}
                     >
@@ -439,7 +491,7 @@ export function LeadCapture() {
                     id="contact-context"
                     rows={3}
                     className={`input-field ${errors.additionalContext ? "error" : ""}`}
-                    placeholder="Any specific challenges?"
+                    placeholder="Describe your current lead volume, CRM setup, or key challenges..."
                     onFocus={handleFieldFocus}
                     {...register("additionalContext")}
                   />
@@ -488,7 +540,7 @@ export function LeadCapture() {
                 >
                   {status === "submitting"
                     ? "Evaluating Request..."
-                    : "Apply for Diagnostic"}
+                    : "Request a Growth Systems Diagnostic"}
                 </button>
 
                 <p
@@ -496,7 +548,7 @@ export function LeadCapture() {
                   className="text-center text-label-caps"
                   style={{ color: "var(--color-secondary)", fontSize: "11px" }}
                 >
-                  We respond within one business day. Absolute discretion guaranteed.
+                  Strict confidentiality guaranteed. We review all submissions and respond within one business day.
                 </p>
               </div>
             </form>

@@ -8,14 +8,14 @@ import { HeroVisual } from "@/components/ui/HeroVisual";
 
 export function Hero() {
   const scrollToContact = useCallback(() => {
-    trackCTAClick("Apply for Executive Diagnostic", "hero-primary");
+    trackCTAClick("Request a Growth Systems Diagnostic", "hero-primary");
     const el = document.getElementById("contact");
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
 
-  const scrollToServices = useCallback(() => {
-    trackCTAClick("Read The Thesis", "hero-secondary");
-    const el = document.getElementById("why-north-star");
+  const scrollToDiagnostic = useCallback(() => {
+    trackCTAClick("See How the Diagnostic Works", "hero-secondary");
+    const el = document.getElementById("diagnostic");
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
 
@@ -36,7 +36,7 @@ export function Hero() {
                   North Star Advisory
                 </span>
                 <span className="text-[var(--color-outline-variant)]">/</span>
-                <span className="text-label-caps text-[var(--color-secondary)]">Revenue Architecture</span>
+                <span className="text-label-caps text-[var(--color-secondary)]">GCC Growth Systems & Automation</span>
               </div>
 
               <div className="animate-fade-in-up delay-100">
@@ -44,8 +44,7 @@ export function Hero() {
                   className="text-display-lg-mobile md:text-display-lg mb-8 leading-tight"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Growth rarely breaks because of effort.
-                  <br className="hidden sm:block" /> It breaks because of friction hidden inside the system.
+                  Turn More GCC Enquiries into Qualified Appointments.
                 </h1>
               </div>
 
@@ -54,7 +53,7 @@ export function Hero() {
                   className="text-body-lg mb-12 max-w-2xl"
                   style={{ color: "var(--color-on-surface-variant)" }}
                 >
-                  We identify structural revenue leakage and deploy algorithmic execution to protect enterprise margins. We architect systemic revenue yield for ambitious operators across the GCC.
+                  We help ambitious GCC operators—starting with high-volume real estate developers and brokerages—identify and fix the routing, qualification, CRM handoff, and follow-up systems behind their growth.
                 </p>
               </div>
 
@@ -65,14 +64,14 @@ export function Hero() {
                     onClick={scrollToContact}
                     id="hero-cta-primary"
                   >
-                    Apply for Diagnostic
+                    Request a Growth Systems Diagnostic
                   </button>
                   <button
                     className="btn-secondary flex items-center gap-2"
-                    onClick={scrollToServices}
+                    onClick={scrollToDiagnostic}
                     id="hero-cta-secondary"
                   >
-                    Read The Thesis
+                    See How the Diagnostic Works
                     <ArrowRight size={14} />
                   </button>
                 </div>
@@ -96,16 +95,16 @@ export function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {[
               {
-                label: "Built For",
-                value: "Real Estate, Healthcare, Professional Services",
+                label: "Target Audience",
+                value: "KSA & UAE Real Estate Developers, Brokerages & High-Value Services",
               },
               {
-                label: "Focus",
-                value: "Saudi Arabia, UAE",
+                label: "Core Specialization",
+                value: "Lead Qualification, Instant CRM Routing, Speed-to-Lead Automation",
               },
               {
-                label: "Specialization",
-                value: "Revenue Systems, AI Infrastructure, Conversion Architecture",
+                label: "First Engagement",
+                value: "5-Day Real-Estate Lead-to-Appointment Diagnostic & Repair Plan",
               },
             ].map((item) => (
               <AnimatedSection key={item.label} delay={0.1}>

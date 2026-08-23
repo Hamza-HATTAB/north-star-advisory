@@ -36,6 +36,19 @@ export interface GFIDomain {
   frictionPoint2: string;
 }
 
+export interface WhoWeHelpCategory {
+  badge: string;
+  title: string;
+  description: string;
+  keyProblems: string[];
+  systemFix: string;
+}
+
+export interface DiagnosticDeliverable {
+  title: string;
+  description: string;
+}
+
 export interface Differentiator {
   title: string;
   description: string;
@@ -44,11 +57,18 @@ export interface Differentiator {
 export interface ContactFormData {
   name: string;
   email: string;
-  company?: string;
-  objective: string;
+  company: string;
+  role?: string;
+  market?: string;
+  industry: string;
+  companySize: string;
+  primaryBottleneck: string;
+  website?: string;
+  additionalContext?: string;
   turnstileToken?: string;
 }
 
 export type ContactFormResponse =
   | { success: true; message: string }
   | { success: false; error: string };
+

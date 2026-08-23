@@ -85,20 +85,24 @@ export function CaseStudies() {
             style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}
           >
             <div className="mb-6 md:mb-0">
-              <SectionLabel light>Empirical Evidence</SectionLabel>
+              <SectionLabel light>Technical Capability & Proof of Method</SectionLabel>
               <h2
                 id="case-studies-heading"
                 className="text-headline-md"
                 style={{ color: "var(--color-on-primary)" }}
               >
-                Architectural Interventions
+                Systems Architecture Models
               </h2>
             </div>
             <button
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
               className="btn-ghost-white flex items-center gap-2"
-              aria-label="Examine all outcome reports"
+              aria-label="Request a Growth Systems Diagnostic"
             >
-              Examine Outcome Reports
+              Request Diagnostic for Your Stack
               <ArrowRight size={14} aria-hidden="true" />
             </button>
           </div>
