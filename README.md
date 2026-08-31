@@ -1,66 +1,134 @@
-# North Star Advisory — Revenue Architecture
+# North Star Advisory
 
-Enterprise-grade landing page and diagnostic application built for North Star Advisory, focused on scaling revenue infrastructure in the GCC.
+A Next.js 16 executive landing platform and interactive lead-to-appointment diagnostic engine tailored for real estate investment firms, family offices, and asset managers operating across the GCC region.
 
-## 🚀 Core Architecture
+## Overview
 
-This project is built on a highly optimized, modern React stack designed for maximum conversion yield, accessibility, and security.
+North Star Advisory delivers institutional diagnostic tools and advisory services for cross-border real estate asset managers. The platform features an interactive Growth Friction Index (GFI) assessment calculator that evaluates operational bottlenecks, quantifies efficiency losses, and provides actionable recommendations alongside a hardened corporate lead capture workflow.
 
-### Tech Stack
-- **Framework:** Next.js 14+ (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS (v4)
-- **Animations:** Framer Motion (Optimized for iOS Low Power Mode)
+## Key Features
+
+- **Growth Friction Index (GFI) Diagnostic:** Dynamic 5-axis interactive self-assessment calculating operational efficiency, friction scores, and financial impact.
+- **Institutional Service Offerings:** Detailed breakdowns of real estate deal sourcing, capital deployment, tech integration, and GCC regulatory compliance framework services.
+- **Secure Lead Capture API:** Endpoint `/api/contact` handling client submissions with server-side validation and anti-spam verification.
+- **Bot Mitigation & Rate Limiting:** Integrated Cloudflare Turnstile CAPTCHA verification and Upstash Redis rate limiting with fail-open fallback logic.
+- **Transactional Notifications:** Resend API integration routing inbound inquiries to advisory partners.
+- **Enterprise WCAG AA Accessibility:** Designed with keyboard navigation support, high-contrast visual tokens, and Low Power Mode CSS animation stability.
+
+## Architecture
+
+```mermaid
+flowchart TD
+    A[Client Browser] -->|View Landing Page| B[Next.js App Router]
+    A -->|Interactive Diagnostics| C[GFI Assessment Calculator]
+    A -->|Submit Contact Form| D[API Route /api/contact]
+    D -->|Validate Payload| E[Zod Schema Validator]
+    D -->|Verify Bot Token| F[Cloudflare Turnstile API]
+    D -->|Check Rate Limit| G[Upstash Redis Rest API]
+    D -->|Send Notification| H[Resend Email Delivery]
+```
+
+## Technical Stack
+
+- **Framework:** Next.js 16 (App Router, Turbopack)
+- **Language:** TypeScript 5.8
+- **Styling:** Tailwind CSS 3.4, Framer Motion
 - **State Management:** Zustand
-- **Form Handling:** React Hook Form + Zod validation
-- **Security:** Cloudflare Turnstile (Client & Server-Side Verification)
-- **Rate Limiting:** Upstash Redis
+- **Validation:** Zod
+- **Rate Limiting:** Upstash Redis (`@upstash/ratelimit`, `@upstash/redis`)
+- **Security:** Cloudflare Turnstile CAPTCHA
+- **Email Service:** Resend API
+- **Analytics:** Google Analytics 4, Microsoft Clarity
+- **Testing:** Playwright (E2E Specifications)
 
-## 🌟 Key Features
+## Project Structure
 
-### 1. Growth Friction Index (GFI) Diagnostic
-An interactive 3-step diagnostic tool that calculates an operator's EBITDA Yield and Revenue Leakage Severity.
-- Calculates structural bottlenecks based on real-time inputs.
-- Automatically constructs and encodes a secure payload for **WhatsApp routing**, directly connecting high-intent prospects to the sales team.
-
-### 2. Secure Enterprise Lead Capture
-- Form protected by strictly enforced **Cloudflare Turnstile** bot protection.
-- Server-side verification ensures that automated bots cannot bypass the UI to spam the endpoint. Empty or invalid tokens are instantly rejected with `400 Bad Request`.
-
-### 3. Bulletproof Accessibility & Responsive Design
-- **Semantic HTML5:** Strict adherence to WAI-ARIA standards (`role="banner"`, `role="main"`, `role="contentinfo"`).
-- **Viewport Hardening:** Mathematical CSS scaling guarantees zero horizontal scroll overflow on extremely narrow 375px mobile viewports.
-- **Low Power Mode Native Support:** Animations are handled natively by Framer Motion. Devices with `prefers-reduced-motion: reduce` enabled (like iPhones on 5% battery) will instantly skip animations to conserve battery, completely avoiding React Hydration Mismatch crashes.
-
-## 🧪 Advanced Testing Infrastructure
-
-This repository is hardened against regressions using a multi-layered testing strategy:
-
-1. **TestSprite AI Autonomous Testing:** 
-   - A fully autonomous AI QA agent is configured via `testsprite_tests/testsprite_frontend_test_plan.json`.
-   - Explicit directives test Turnstile blocks, iOS Low Power Mode, mobile viewport integrity, and ARIA landmarks.
-2. **Playwright E2E:** 
-   - Automated browser testing to ensure critical paths (like the GFI diagnostic and lead submission) are functionally sound.
-3. **Lighthouse Performance & SEO:** 
-   - Optimized for perfect 100 scores across Accessibility, Best Practices, and SEO.
-
-## 💻 Local Development
-
-First, set up your local environment variables:
-```bash
-# .env.local
-NEXT_PUBLIC_TURNSTILE_SITE_KEY=your_site_key
-TURNSTILE_SECRET_KEY=your_secret_key
-UPSTASH_REDIS_REST_URL=your_redis_url
-UPSTASH_REDIS_REST_TOKEN=your_redis_token
+```
+north-star-advisory/
+├── app/                  # App Router routes (about, advisory-services, gcc-compliance, api/contact)
+├── components/           # UI components, layout header/footer, and section modules
+│   ├── sections/         # GrowthFrictionIndex, LeadCapture, Hero, CaseStudies
+│   ├── navigation/       # Navbar and drawer components
+│   └── ui/               # Reusable primitive tokens and animations
+├── content/              # Static content definitions and case study data
+├── lib/                  # Analytics, metadata generators, Zustand store, Zod schemas
+├── public/               # Brand assets, static images, social media graphics
+├── tests/                # Playwright E2E test suite (accessibility, form, navigation)
+└── types/                # TypeScript type specifications
 ```
 
-Run the development server:
+## Environment Variables
+
+Copy `.env.example` to `.env.local` and specify your credentials:
+
 ```bash
-npm run dev
+cp .env.example .env.local
 ```
 
-To run the full production build (recommended for testing):
+Required environment variables:
+
+| Variable | Description |
+| :--- | :--- |
+| `RESEND_API_KEY` | Resend API authorization key for transactional email delivery |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Cloudflare Turnstile public site key |
+| `TURNSTILE_SECRET_KEY` | Cloudflare Turnstile secret validation key |
+| `UPSTASH_REDIS_REST_URL` | Upstash Redis REST database URL for rate limiting |
+| `UPSTASH_REDIS_REST_TOKEN` | Upstash Redis REST authorization token |
+| `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | Optional Google Analytics 4 tracking ID |
+| `NEXT_PUBLIC_CLARITY_PROJECT_ID` | Optional Microsoft Clarity project ID |
+
+## Running Locally
+
+### Prerequisites
+
+- Node.js `>= 20.0.0`
+- npm `>= 10.0.0`
+
+### Installation & Execution
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Start development server:**
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:3000` in your browser.
+
+3. **Build for production:**
+   ```bash
+   npm run build
+   npm run start
+   ```
+
+## Testing
+
+Run Playwright end-to-end tests covering forms, responsiveness, accessibility, and navigation:
+
 ```bash
-npm run build && PORT=3000 npm run start
+npx playwright test
 ```
+
+## Engineering Highlights
+
+- **Resilient Fail-Open Rate Limiter:** The Upstash Redis rate limiter in `/api/contact` handles network and DNS lookup timeouts gracefully by failing-open, ensuring legitimate corporate inquiries are never dropped during transient infrastructure issues.
+- **Interactive State Calculation:** The Growth Friction Index calculates weighted scores dynamically on the client side using Zustand, supporting instant score recalculation without server round-trips.
+- **Low Power Mode Animation Safe Guards:** CSS animations and transitions respect system accessibility settings (`prefers-reduced-motion`) and energy-saving states.
+
+## Limitations & Future Improvements
+
+- **Diagnostic PDF Generation:** Future releases will introduce automated server-side PDF report generation for calculated GFI scores, allowing users to download detailed PDF audit summaries.
+- **CRM Integration:** Direct synchronization with enterprise CRMs (e.g., Salesforce or HubSpot) for automated deal-stage tracking.
+
+## Author
+
+Hamza Riadh Hattab
+
+- **GitHub:** [https://github.com/Hamza-HATTAB](https://github.com/Hamza-HATTAB)
+- **LinkedIn:** [https://www.linkedin.com/in/hamza-riadh-h-44a297345/](https://www.linkedin.com/in/hamza-riadh-h-44a297345/)
+
+## License
+
+This project is licensed under the MIT License.
